@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+<title>EXERCISE8Q5(23BCE1760)</title>
+</head>
+<body>
+<script>
+let regNo = prompt("Enter your registration
+number:");
+document.write(
+`<div style="border: 2px solid red; padding:
+10px; text-align: center; width: 150px; margin: 10px
+auto;">
+<span style="font-weight:
+bold;">${regNo}</span>
+</div>`
+);
+let name = prompt("Enter your name:");
+let nameDiv = document.createElement("div");
+nameDiv.style.border = "2px solid black";
+nameDiv.style.padding = "10px";
+nameDiv.style.width = "150px";
+nameDiv.style.margin = "10px auto";
+nameDiv.style.textAlign = "center";
+nameDiv.style.fontWeight = "bold";
+nameDiv.style.color = "red";
+nameDiv.innerHTML = `*${name}*`;
+document.body.appendChild(nameDiv);
+</script>
+</body>
+</html>
