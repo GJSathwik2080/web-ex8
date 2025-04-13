@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ticket Booth(23bce1760)</title>
+<script>
+function calculateTotal() {
+let adults =
+parseInt(document.getElementById("adults").value)
+|| 0;
+let children =
+parseInt(document.getElementById("children").valu
+e) || 0;
+let total = (adults * 10) + (children * 5);
+document.getElementById("totalAmount").val
+ue = total;
+}
+</script>
+</head>
+<body>
+<h3>TICKET BOOTH</h3>
+Adults (₹10 each): <input type="number"
+id="adults"><br>
+Children (₹5 each): <input type="number"
+id="children"><br>
+<button onclick="calculateTotal()">Total</button>
+<input type="text" id="totalAmount" readonly>
+</body>
+</html>
